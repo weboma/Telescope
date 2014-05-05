@@ -30,8 +30,8 @@ Template.layout.rendered = function(){
     }
 
     // set title
-    var title = getSetting("title");
-    var tagline = getSetting("tagline");
+    var title = getSetting("title","WEBOMA");
+    var tagline = getSetting("tagline","Toute la communauté Digital Marocaine");
 
     document.title = (tagline ? title+': '+tagline : title) || "";
 }

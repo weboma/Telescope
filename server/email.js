@@ -3,7 +3,7 @@ sendEmail = function(to, subject, text, html){
   // TODO: limit who can send emails
   // TODO: fix this error: Error: getaddrinfo ENOTFOUND
   
-  var from = getSetting('defaultEmail', 'postmaster@bobox.ma');
+  var from = getSetting('defaultEmail', 'weboma@bobox.ma');
 
   var siteName = getSetting('title');
   var subject = '['+siteName+'] '+subject

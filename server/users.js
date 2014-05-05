@@ -100,7 +100,7 @@ Meteor.methods({
     console.log(numberOfItemsInPast24Hours(Meteor.user(), Comments));
   },
   testEmail: function(){
-    Email.send({from: 'postmaster@bobox.ma', to: getEmail(Meteor.user()), subject: 'Telescope email test', text: 'lorem ipsum dolor sit amet.'});
+    Email.send({from: 'weboma@bobox.ma', to: getEmail(Meteor.user()), subject: 'Telescope email test', text: 'lorem ipsum dolor sit amet.'});
   },
   testBuffer: function(){
     // TODO
