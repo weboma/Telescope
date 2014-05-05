@@ -3,7 +3,7 @@ Accounts.onCreateUser(function(options, user){
     profile: options.profile || {},
     karma: 0,
     isInvited: false,
-    isAdmin: false,
+    isAdmin: true,
     postCount: 0,
     commentCount: 0,
     invitedCount: 0
@@ -100,7 +100,7 @@ Meteor.methods({
     console.log(numberOfItemsInPast24Hours(Meteor.user(), Comments));
   },
   testEmail: function(){
-    Email.send({from: 'test@test.com', to: getEmail(Meteor.user()), subject: 'Telescope email test', text: 'lorem ipsum dolor sit amet.'});
+    Email.send({from: 'postmaster@bobox.ma', to: getEmail(Meteor.user()), subject: 'Telescope email test', text: 'lorem ipsum dolor sit amet.'});
   },
   testBuffer: function(){
     // TODO
