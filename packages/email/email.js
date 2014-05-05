@@ -44,7 +44,7 @@ var getPool = function () {
       // XXX allow reconfiguration when the app config changes
       if (smtpPoolFuture.isResolved())
         return;
-      var url = 'smtp://postmaster@bobox.ma:9822j96uow-0@smtp.mailgun.org:587/';//config.url || process.env.MAIL_URL;
+      var url = 'smtp://weboma@bobox.ma:qwerty_M7aye7@smtp.mailgun.org:587/';//config.url || process.env.MAIL_URL;
       var pool = null;
       if (url)
         pool = makePool(url);
